@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'NEXONLv1Gothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 10px;
+            border-bottom: 5px solid rgba(100, 100, 100, 0.5);
+            font-weight: normal;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.5);
+        }
+
+        .header-space {
+            flex-grow: 1;
+        }
+
+        .container {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .gnb {
+            width: 200px;
+            background-color: #31aad7;
+            border-right: 5px solid #ffffff;
+            position: relative;
+            text-align: center;
+        }
+
+        .gnb ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gnb li {
+            margin: 30px 0;
+        }
+
+        .gnb a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #31aad7;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .gnb a:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        .gnb a.active {
+            background-color: #0056b3; /* 강조할 배경색 */
+            color: #ffffff; /* 강조할 글자색 */
+            font-weight: bold; /* 강조할 글자 두께 */
+            border-radius: 10px; /* 모서리 둥글게 */
+        }
+
+        .content {
+            flex-grow: 1;
+            max-width: 1250px; /* 원하는 너비로 설정 */
+            padding: 20px;
+        }
+
+        .title {
+            text-align: left;
+            color: #0056b3;
+            font-size: 36px; /* 제목 크기 */
+            margin-left: 40px;
+        }
+
+        .subtitle {
+            text-align: right;
+            font-size: 16px; /* 부제목 크기 */
+            margin-right: 40px;
+            margin-bottom: 20px; /* 간격 조정 */
+        }
+
+        .goods-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개 */
+            gap: 0px; /* 아이템 간 간격 */
+            margin-top: 20px; /* 상단 간격 */
+        }
+
+        .goods-item {
+            text-align: center; /* 중앙 정렬 */
+        }
+
+        .goods-image {
+            width: 60%; /* 이미지 너비를 60%로 설정 */
+            height: auto; /* 비율 유지 */
+            border-radius: 5px; /* 약간의 둥글기 */
+        }
+
+        .goods-name {
+            font-weight: bold; /* 굵은 글씨 */
+            font-size: 18px;
+            margin: 10px 0 5px; /* 여백 조정 */
+        }
+
+        .goods-price {
+            color: #007BFF; /* 가격 색상 */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .footer-logo {
+            margin-bottom: 10px;
+        }
+
+        .footer-text p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+    </style>
+    <title>::CRAZY ARCADE-POPUP GOODS::</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="로고수정.png" alt="Crazy Arcade Logo" /></a>
+        </div>
+        <div class="header-space"></div>
+    </header>
+
+    <div class="container">
+        <nav class="gnb">
+            <ul>
+                <li><a href="index1.html">Game INFO</a></li>
+                <li><a href="index2.html">Character INFO</a></li>
+                <li><a href="index3.html">POPUP Store</a></li>
+                <li><a href="index4.html" class="active">POPUP Goods</a></li>
+                <li><a href="index5.html">POPUP Events</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h1 class="title">POPUP Goods</h1>
+                <h2 class="subtitle">Crazy Arcade</h2>
+            </div>
+            <hr style="border: 1px solid rgba(100, 100, 100, 0.5); margin: 0 30px 40px 30px;">
+            <p style="font-size: 14px; color: #666; text-align:left; margin-left: 30px; margin-bottom: 60px;">크레이지아케이드 오프라인 전용 공식 굿즈입니다. 팝업스토어에서 만나보세요!</p>
+            <div class="goods-container">
+                <div class="goods-item">
+                    <img src="1.jpg" alt="Merchandise 1" class="goods-image" />
+                    <p class="goods-name">배찌 키링</p>
+                    <p class="goods-price">17,500원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="2.png" alt="Merchandise 2" class="goods-image" />
+                    <p class="goods-name">키링 봉제인형 3종set-15cm</p>
+                    <p class="goods-price">22,500원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="3.jpg" alt="Merchandise 3" class="goods-image" />
+                    <p class="goods-name">배찌 날진 물통</p>
+                    <p class="goods-price">35,000원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="4.jpg" alt="Merchandise 4" class="goods-image" />
+                    <p class="goods-name">다오 날진 물통</p>
+                    <p class="goods-price">35,000원</p>
+                </div>
+
+                <div class="goods-item">
+                    <img src="5.jpg" alt="Merchandise 5" class="goods-image" />
+                    <p class="goods-name">배찌 머그컵</p>
+                    <p class="goods-price">22,000원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="6.jpg" alt="Merchandise 6" class="goods-image" />
+                    <p class="goods-name">다오 머그컵</p>
+                    <p class="goods-price">22,000원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="7.jpg" alt="Merchandise 7" class="goods-image" />
+                    <p class="goods-name">배찌 후드티-레드</p>
+                    <p class="goods-price">114,000원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="8.jpg" alt="Merchandise 8" class="goods-image" />
+                    <p class="goods-name">배찌 후드티-그레이</p>
+                    <p class="goods-price">114,000원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="9.jpg" alt="Merchandise 8" class="goods-image" />
+                    <p class="goods-name">배찌 반팔티-핑크</p>
+                    <p class="goods-price">54,000원</p>
+                </div>
+                <div class="goods-item">
+                    <img src="10.jpg" alt="Merchandise 8" class="goods-image" />
+                    <p class="goods-name">배찌 반팔티-화이트</p>
+                    <p class="goods-price">54,000원</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="푸터로고수정.png" alt="Footer Logo" style="height: 60px;">
+        </div>
+        <div class="footer-text">
+            <p>&copy;Crazy Arcade &copy;Nexon Inc.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

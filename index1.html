@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'NEXONLv1Gothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 10px;
+            border-bottom: 5px solid rgba(100, 100, 100, 0.5);
+            font-weight: normal;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.5);
+        }
+
+        .header-space {
+            flex-grow: 1;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .gnb {
+            width: 200px;
+            background-color: #31aad7;
+            border-right: 5px solid #ffffff;
+            position: relative;
+            text-align: center;
+        }
+
+        .gnb ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gnb li {
+            margin: 30px 0;
+        }
+
+        .gnb a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #31aad7;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .gnb a:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        .gnb a.active {
+            background-color: #0056b3; /* 강조할 배경색 */
+            color: #ffffff; /* 강조할 글자색 */
+            font-weight: bold; /* 강조할 글자 두께 */
+            border-radius: 10px; /* 모서리 둥글게 */
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: left;
+            color: #0056b3;
+            font-size: 36px; /* 제목 크기 */
+            margin-left: 40px;
+        }
+
+        .subtitle {
+            text-align: right;
+            font-size: 16px; /* 부제목 크기 */
+            margin-right: 40px;
+            margin-bottom: 20px; /* 간격 조정 */
+        }
+
+        .game-info {
+            display: flex;
+            flex-direction: column; /* 세로 방향으로 정렬 */
+            margin-top: 20px; /* 상단 간격 조정 */
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px; /* 아래쪽 간격 조정 */
+            padding: 0 20px; /* 좌우 패딩 추가로 간격 조정 */
+        }
+
+        .info-item.reverse {
+            flex-direction: row-reverse; /* 지그재그 배열을 위해 반전 */
+        }
+
+        .game-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 100px 0 0; /* 기존 설정 유지 */
+        }
+
+        .info-item.reverse .game-image {
+            margin: 0 0 0 100px; /* 왼쪽 마진 추가 */
+        }
+
+        .info-item.reverse .game-details {
+            margin-right: 0; /* 오른쪽 마진 제거 */
+        }
+
+        .game-details {
+            flex-grow: 1; /* 남은 공간을 차지 */
+        }
+
+        .content-title {
+            font-size: 28px; /* 콘텐츠 제목 크기 */
+            margin: 0 0 10px 0; /* 하단 간격 조정 */
+        }
+
+        .content-text {
+            font-size: 16px; /* 콘텐츠 텍스트 크기 */
+            line-height: 1.5; /* 줄 간격 조정 */
+            color: #333; /* 텍스트 색깔을 기본 색으로 변경 */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .footer-logo {
+            margin-bottom: 10px;
+        }
+
+        .footer-text p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+    </style>
+    <title>::CRAZY ARCADE-GAME INFO::</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="로고수정.png" alt="Crazy Arcade Logo" /></a>
+        </div>
+        <div class="header-space"></div>
+    </header>
+
+    <div class="container">
+        <nav class="gnb">
+            <ul>
+                <li><a href="index1.html" class="active">Game INFO</a></li>
+                <li><a href="index2.html">Character INFO</a></li>
+                <li><a href="index3.html">POPUP Store</a></li>
+                <li><a href="index4.html">POPUP Goods</a></li>
+                <li><a href="index5.html">POPUP Events</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h1 class="title">Game INFO</h1>
+                <h2 class="subtitle">Crazy Arcade</h2>
+            </div>
+            <hr style="border: 1px solid rgba(100, 100, 100, 0.5); margin: 0 30px 40px 30px;">
+            <div class="game-info">
+                <div class="info-item">
+                    <img src="패턴수정.png" alt="Game Image 1" class="game-image" />
+                    <div class="game-details">
+                        <h3 class="content-title" style="text-align: left;">게임 방법</h3>
+                        <p class="content-text" style="text-align: left;">상대방을 물속에 가두거나 물풍선을 사용해 공격하여 승리하는 게임이에요! <br>
+                            게임이 시작되면 각 플레이어는 캐릭터를 선택하고, 게임이 시작되면 아이템<br>
+                            과 무기를 찾아야 해요. 맵 곳곳에 숨겨진 아이템을 찾아서 사용할 수 있어요. <br>
+                            방어막, 물풍선 등 다양한 도구가 있어요. 상대방에게 물풍선을 던져서 공격<br>
+                            해요. 물풍선은 일정 시간 후에 터지니 주의해야 해요. 다양한 맵과 게임 모드<br>
+                            가 있으니 친구와 함께 플레이하며 더욱 재미있게 즐겨보세요!</p>
+                    </div>
+                </div>
+            
+                <div class="info-item reverse">
+                    <img src="세계관.png" alt="Game Image 2" class="game-image" />
+                    <div class="game-details">
+                        <h3 class="content-title" style="text-align: right;">게임 스토리</h3>
+                        <p class="content-text" style="text-align: right;">아무도 모르는 바다 한 가운데 작은 섬, 울창한 숲 속 깊은 곳에 버블힐 마을이<br> 
+                            있었어요. 이곳 사람들은 물풍선을 이용해 사냥하거나 채굴을 하면서 신비로운<br>
+                            보석을 얻어 살고 있었답니다. 평화롭던 어느 날, 갑자기 버블힐 마을 어른들이<br>
+                            모두 사라지고, 악명높은 바다의 해적 로두마니가 버블힐 마을의 보석을 빼앗기<br>
+                            위해 마을을 침공했어요. 배찌와 다오 친구들은 각자의 능력으로 물풍선을 이용<br> 
+                            해서 악당들과 맞서 싸웠어요. 과연 이들은 버블힐 마을을 지켜낼 수 있을까요?</p>
+                    </div>
+                </div>
+            
+                <div class="info-item">
+                    <img src="맵.png" alt="Game Image 3" class="game-image" />
+                    <div class="game-details">
+                        <h3 class="content-title" style="text-align: left;">게임 맵</h3>
+                        <p class="content-text" style="text-align: left;">푸른 바다에서는 맑은 물과 산호초 사이 수중 아이템을 찾는 재미가 있어요.<br>
+                            신비의 정원에서는 귀여운 식물들로 가득한 풀숲에서 비밀통로를 활용해요.<br>                           
+                            얼음 동굴에서는 미끄러운 얼음 위에서 빠른 속도로 이동하며 보물을 찾아요.<br>                          
+                            사막의 모래언덕에서는 모래 폭풍 속에서 은신처를 활용해 빠르게 움직여요.<br>                          
+                            버섯 숲에서는 화려한 버섯 사이에서 다양한 장애물과 비밀 통로를 탐험해요.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="푸터로고수정.png" alt="Footer Logo" style="height: 60px;">
+        </div>
+        <div class="footer-text">
+            <p>&copy;Crazy Arcade &copy;Nexon Inc.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'NEXONLv1Gothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 10px;
+            border-bottom: 5px solid rgba(100, 100, 100, 0.5);
+        }
+
+        .logo img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.5);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .gnb {
+            width: 200px;
+            background-color: #31aad7;
+            border-right: 5px solid #ffffff;
+            text-align: center;
+        }
+
+        .gnb ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gnb li {
+            margin: 30px 0;
+        }
+
+        .gnb a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #31aad7;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .gnb a:hover,
+        .gnb a.active {
+            background-color: #0056b3;
+            color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            text-align: center; /* 전체 중앙 정렬 */
+        }
+
+        .title {
+            text-align: left;
+            color: #0056b3;
+            font-size: 36px;
+            margin-left: 40px;
+        }
+
+        .subtitle {
+            text-align: right;
+            font-size: 16px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+        }
+
+        .popup-store-image {
+            width: 500px; /* 고정 너비 */
+            height: 650px; /* 고정 높이 */
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            display: block;
+        }
+
+        .popup-images {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .vertical-line {
+            width: 5px;
+            background-color: #0056b3;
+            height: 20px;
+            margin-left: 30px;
+            margin-right: 20px; /* 원하는 마진 값으로 조정 */
+        }
+
+        .store-info p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 3; /* 줄 간격을 넓힘 */
+        }
+
+        .timeline-table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .timeline-table th,
+        .timeline-table td {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 5px;
+            text-align: left;
+            width: 33.33%; /* 각 칸을 동일하게 1/3로 설정 */
+        }
+
+        .timeline-table th {
+            background-color: #31aad7;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .registration-item {
+            margin-top: 20px;
+            display: flex; /* 수평 정렬 */
+            align-items: center; /* 중앙 정렬 */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .footer-logo {
+            margin-bottom: 10px;
+        }
+
+        .footer-text p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        /* 추가 스타일: 여백 및 정렬 */
+        .popup-store-info {
+            margin-bottom: 20px; /* 포스터 아래 여백 추가 */
+        }
+
+        .info-item p:last-child {
+            text-align: center; /* 중앙 정렬 */
+            margin: 0; /* 여백 제거 */
+        }
+
+        .info-item {
+            display: flex; /* 수평 정렬 */
+            align-items: center; /* 중앙 정렬 */
+        }
+
+        .info-item div {
+            margin-right: 10px; /* vertical-line과 간격 조정 */
+        }
+    </style>
+    <title>::CRAZY ARCADE-POPUP STORE::</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="로고수정.png" alt="Crazy Arcade Logo" /></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="gnb">
+            <ul>
+                <li><a href="index1.html">Game INFO</a></li>
+                <li><a href="index2.html">Character INFO</a></li>
+                <li><a href="index3.html" class="active">POPUP Store</a></li>
+                <li><a href="index4.html">POPUP Goods</a></li>
+                <li><a href="index5.html">POPUP Events</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h1 class="title">POPUP Store</h1>
+                <h2 class="subtitle">CRAZY ARCADE</h2>
+            </div>
+            <hr style="border: 1px solid rgba(100, 100, 100, 0.5); margin: 0 30px 40px 30px;">
+            <div class="popup-store-info">
+                <div class="popup-images">
+                    <img src="포스터.png" alt="팝업 스토어 포스터" class="popup-store-image" />
+                </div>
+                <div class="store-details">
+                    <div class="store-info">
+                        <div class="info-item">
+                            <div class="vertical-line"></div>
+                            <p style="font-weight: bold; font-size: 24px;">팝업 기간</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025.06.14 - 2025.08.14</p>
+                        </div>
+                        <div class="info-item">
+                            <div class="vertical-line"></div>
+                            <p style="font-weight: bold; font-size: 24px;">스토어 주소</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울 성동구 성수동 연무장로 11길27, CA STORE 전층</p>
+                        </div>
+                        <div class="info-item">
+                            <div class="vertical-line"></div>
+                            <p style="font-weight: bold; font-size: 24px;">타임라인</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AM 10:00 - PM 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="timeline-table" style="border-collapse: collapse;">
+                    <tbody>
+                        <tr>
+                            <td style="border: none;">
+                                <div style="background-color: #31aad7; color: white; font-weight: bold; padding: 10px; border-radius: 5px; text-align: center;">
+                                    10:00
+                                </div>
+                                <div style="background-color: white; color: black; padding: 10px; text-align: center; margin-top: 10px;">
+                                    OPEN | 첫 50명에게 아이템 쿠폰 증정
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">
+                                <div style="background-color: #31aad7; color: white; font-weight: bold; padding: 10px; border-radius: 5px; text-align: center;">
+                                    12:00
+                                </div>
+                                <div style="background-color: white; color: black; padding: 10px; text-align: center; margin-top: 10px;">
+                                    특별 게스트 | 크드컵 초대 우승자 방문
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">
+                                <div style="background-color: #31aad7; color: white; font-weight: bold; padding: 10px; border-radius: 5px; text-align: center;">
+                                    14:00
+                                </div>
+                                <div style="background-color: white; color: black; padding: 10px; text-align: center; margin-top: 10px;">
+                                    게임 토너먼트 | 입구에서 참가 등록 필요
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">
+                                <div style="background-color: #31aad7; color: white; font-weight: bold; padding: 10px; border-radius: 5px; text-align: center;">
+                                    16:00
+                                </div>
+                                <div style="background-color: white; color: black; padding: 10px; text-align: center; margin-top: 10px;">
+                                    오프라인 레더짱 | 현장에서 생중계되는 2025레더짱 선발전
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;">
+                                <div style="background-color: #31aad7; color: white; font-weight: bold; padding: 10px; border-radius: 5px; text-align: center;">
+                                    18:00
+                                </div>
+                                <div style="background-color: white; color: black; padding: 10px; text-align: center; margin-top: 10px;">
+                                    마감 | 세일
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="registration-item">
+                    <div class="vertical-line"></div>
+                    <p style="font-weight: bold; font-size: 24px;">입장등록 안내</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;팝업 스토어 입장 등록은 스토어를 방문하여 등록 입장 팔찌를 수령해주세요.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="푸터로고수정.png" alt="Footer Logo" style="height: 60px;">
+        </div>
+        <div class="footer-text">
+            <p>&copy;Crazy Arcade &copy;Nexon Inc.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

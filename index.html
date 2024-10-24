@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'NEXONLv1Gothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+            background-color: #a3d8f4;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 10px;
+            border-bottom: 5px solid rgba(100, 100, 100, 0.5);
+            font-weight: normal;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.5);
+        }
+
+        .header-space {
+            flex-grow: 1;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .gnb {
+            width: 200px;
+            background-color: #31aad7;
+            border-right: 5px solid #ffffff;
+            position: relative;
+            text-align: center;
+        }
+
+        .gnb ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gnb li {
+            margin: 30px 0;
+        }
+
+        .gnb a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #31aad7;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .gnb a:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        .main-banner {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            max-width: 1920px;
+            max-height: 1080px;
+            margin: auto;
+            position: relative;
+            background-color: white;
+        }
+
+        .main-banner img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .footer-logo {
+            margin-bottom: 10px;
+        }
+
+        .footer-text p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+    </style>
+    <title>::CRAZY ARCADE::</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="로고수정.png" alt="Crazy Arcade Logo" /></a>
+        </div>
+        <div class="header-space"></div>
+    </header>
+
+    <div class="container">
+        <nav class="gnb">
+            <ul>
+                <li><a href="index1.html">Game INFO</a></li>
+                <li><a href="index2.html">Character INFO</a></li>
+                <li><a href="index3.html">POPUP Store</a></li>
+                <li><a href="index4.html">POPUP Goods</a></li>
+                <li><a href="index5.html">POPUP Events</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-banner">
+            <img src="배너수정.png" alt="Main Banner" />
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="푸터로고수정.png" alt="Footer Logo" style="height: 60px;">
+        </div>
+        <div class="footer-text">
+            <p>&copy;Crazy Arcade &copy;Nexon Inc.</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
